@@ -5,7 +5,7 @@ body {
     background-image: url('./images/background.png'); /* Replace with your image file path */
     background-size: cover; /* Adjust image size to cover the entire element */
     background-repeat: no-repeat; /* Prevent image repetition */
-
+    
     /* Other styles as needed */
 }
 
