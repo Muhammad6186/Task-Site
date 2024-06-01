@@ -4,8 +4,8 @@
 body {
     background-image: url('./images/background.png'); /* Replace with your image file path */
     background-size: cover; /* Adjust image size to cover the entire element */
-    background-repeat: no-repeat; /* Prevent image repetition */
-    
+    background-repeat: repeat; /* Prevent image repetition */
+
     /* Other styles as needed */
 }
 
@@ -16,7 +16,21 @@ body {
     box-shadow: 0px 0px 10px 1px #000000ee;
     border-radius: 10px;
     padding: 20px;
-    height: 600px;
+    height: 100%;
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.earn-robux2 {
+    background-color: #212121; /* Translucent black background */
+    box-shadow: 0px 0px 10px 1px #000000ee;
+    border-radius: 10px;
+    padding: 20px;
+    height: 300px;
     margin-top: 50px;
     margin-left: 15px;
     margin-right: 15px;
@@ -50,8 +64,33 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 200%;
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 100%);
     pointer-events: none; /* Allow clicks to pass through */
     z-index: -1; /* Place behind other elements */
+}
+
+.neon-border {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+   /* Transparent background */
+  border: 0.5px solid #ff9933; /* Neon orange border */
+  border-radius: 10px;
+  animation: glowing-border 1.5s infinite alternate;
+  box-shadow: 0px 0px 10px 1px #000000ee
+}
+
+@keyframes glowing-border {
+  0% {
+    border-color: #00ff18; /* Neon orange border color */
+  }
+  50% {
+    border-color: transparent; /* Transparent border color */
+  }
+  100% {
+    border-color: #00ff18; /* Neon orange border color */
+  }
 }
